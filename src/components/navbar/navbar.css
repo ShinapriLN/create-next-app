@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root{
+    --blue-700: #1D4ED8;
+    --blue-800: rgb(30 64 175);
+}
+.custom-list {
+    @apply 
+    content-center 
+    text-white 
+    w-52 
+    rounded-xl 
+    text-center 
+    duration-300
+    gap-x-1 
+    cursor-pointer;
+}
+
+.custom-list:hover {
+    @apply 
+    shadow-md
+    shadow-white
+    /* text-blue-700
+    underline
+    underline-offset-4 */
+    /* bg-blue-600
+    border-blue-900 
+    border-solid  */
+    /*border-2*/
+    /* bg-gradient-radial from-neutral-900 from-40% to-blue-200 to-80% text-white; */
+
+}

@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.el-note {
+    @apply
+    w-1/2
+    h-1/4
+    inline-block
+    p-1
+}
+.note {
+    cursor: pointer;
+    @apply
+    w-full h-full bg-gradient-to-r from-blue-900 to-blue-600 rounded-md text-center content-center text-[1.5rem]
+    text-white duration-200;
+}
+.note:hover {
+    /* text-shadow: 0 0 5px white; */
+    @apply shadow shadow-blue-600 bg-gradient-to-r from-blue-800 to-blue-500;
+}
+.pre-btn-note {
+    @apply
+    h-full w-full flex justify-center
+    pt-2 pb-2 pl-12 pr-12;
+}
+
+.btn-note {
+    cursor: pointer;
+    @apply
+    h-full
+    w-full
+    content-center
+    text-center
+    rounded-md
+    bg-gradient-to-r from-blue-900 to-blue-600
+    duration-200;
+    
+}
+.btn-note:hover {
+    @apply bg-gradient-to-r from-blue-800 to-blue-500;
+}
+
+/* Hide scrollbar for Chrome, Safari, and Opera */
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge, and Firefox */
+.container {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}

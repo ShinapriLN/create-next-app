@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.blog-post .description {
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 10;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+}
+
+.blog-post .topic {
+    @apply text-2xl font-bold;
+}
+.blog-post {
+    cursor: pointer;
+    @apply duration-200;
+
+}
+.blog-post:hover {
+    @apply brightness-105;
+}
+

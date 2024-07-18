@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @apply
+    bg-cover
+    bg-no-repeat
+    bg-center
+    rounded-[10px];
+}

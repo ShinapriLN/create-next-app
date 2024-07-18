@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.contact-icon {
+    cursor: pointer;
+    @apply h-full w-full text-white duration-200 rounded-full;
+
+}
+.contact-icon:hover {
+    @apply shadow-md shadow-white;
+}
+
+div > h1 {
+    @apply font-bold text-xl mt-4;
+}
