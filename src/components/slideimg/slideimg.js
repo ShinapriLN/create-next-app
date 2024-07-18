@@ -2,7 +2,7 @@
 import './slideimg.css';
 import Image from 'next/image';
 // import Swiper core and required modules
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Lusitana } from 'next/font/google';
 const lusitana = Lusitana({
@@ -15,6 +15,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import { delay } from 'lodash';
 
 const Images = [
   {
@@ -47,10 +48,12 @@ export default function Slideimg() {
         <Swiper
           // install Swiper modules
           // modules={[Navigation, Pagination, Scrollbar, A11y]}
+          modules={[Autoplay]}
           spaceBetween={50}
           slidesPerView={1}
           // navigation
           loop={true}
+          autoplay={{delay: 2000}}
           // pagination={{ clickable: true }}
           // scrollbar={{ draggable: true }}
           // onSwiper={(swiper) => console.log(swiper)}
